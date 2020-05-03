@@ -1,0 +1,19 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: questcode
+    namespace: prod
+data:
+    NODE_ENV: prod
+    GITHUB_CLIENT_ID: 29715247b910f91be8cd
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: questcode
+    namespace: staging
+data:
+    NODE_ENV: staging
+    GITHUB_CLIENT_ID: 29715247b910f91be8cd
+---
